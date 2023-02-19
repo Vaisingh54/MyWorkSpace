@@ -1,3 +1,4 @@
+package Random;
 public class ArmstrongNum{
     /**
      * @param args
