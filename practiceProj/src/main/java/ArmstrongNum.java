@@ -3,7 +3,7 @@ public class ArmstrongNum{
      * @param args
      */
     public static void main(String[] args) {
-        int n = 407,ans=0,i,real=n;
+        int n = 153,ans=0,i,real=n;
         
 
         while(n!=0)
