@@ -1,4 +1,4 @@
-package Random;
+package Series;
 import java.util.Scanner;
 
 public class SwapNum {
