@@ -1,11 +1,13 @@
-package LeetCode;
+package LeetCode.Arrays;
+
+import java.util.Arrays;
 
 public class TwoSum {
 
     public static void main(String[] args) {
 
-        int[] nums = { 3, 2, 4 };
-        int target = 6;
+        int[] nums = { 3, 2, 4, 6, 5, 1 };
+        int target = 17;
 
         twoSum(nums, target);
 
@@ -24,10 +26,10 @@ public class TwoSum {
                 }
             }
         }
-
-        for (int k = 0; k < 2; k++) {
-            System.out.println(result[k]);
-        }
+        if (result[0] == 0 && result[1] == 0)
+            System.out.println("Not found");
+        else
+            System.out.println(Arrays.toString(result));
     }
 
 }

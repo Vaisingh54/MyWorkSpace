@@ -1,21 +1,19 @@
 package Series;
+
 public class PalindromeNum {
+
     public static void main(String[] args) {
-       
-        String ans="";
-        String s = "String";
-        int N = s.length();
 
-        
+        int num = 545;
+        int rev = 0;
+        int original = num;
 
-        for (int i = N-1; i>=0; i--)
-        {
-            ans = ans+s.charAt(i);
+        while (num > 0) {
+            rev = rev * 10 + num % 10;
+            num = num / 10;
         }
-        
-        System.out.println(ans);
-        
-        
+
+        System.out.println(original == rev);
     }
-    
+
 }
