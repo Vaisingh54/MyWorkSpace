@@ -1,9 +1,16 @@
 package Practice;
 
-import java.io.*;
-import java.util.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.*;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 class Result {
 
@@ -14,9 +21,9 @@ class Result {
      * The function accepts 2D_INTEGER_ARRAY container as parameter.
      */
 
-    public static String organizingContainers(List<List<Integer>> container) {
+    // public static String organizingContainers(List<List<Integer>> container) {
 
-    }
+    // }
 
 }
 
@@ -45,9 +52,9 @@ public class TuringTest {
                     }
                 });
 
-                String result = Result.organizingContainers(container);
+                // String result = Result.organizingContainers(container);
 
-                bufferedWriter.write(result);
+                // bufferedWriter.write(result);
                 bufferedWriter.newLine();
             } catch (IOException ex) {
                 throw new RuntimeException(ex);

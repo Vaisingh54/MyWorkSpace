@@ -11,12 +11,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="quizApp" target="1.5" />
+      <module name="quizApp" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="quizApp" options="" />
+      <module name="quizApp" options="-parameters" />
     </option>
   </component>
 </project>
