@@ -3,34 +3,29 @@ package Series;
 public class RotateArray {
 
     public static void main(String[] args) {
-        int[] nums = {-1,-100,3,99};
-        int k = 2;
+        int[] A = { 3, 8, 9, 7, 6 };
+        int k = 3;
 
-        rotateArray(nums, k);
-        
+        rotateArray(A, k);
+
     }
 
-    public static void rotateArray(int[] nums, int k){
-        int len = nums.length;
-        int[] ans = new int[len];
+    public static void rotateArray(int[] A, int k) {
+        int len = A.length;
 
-        for(int i=0;i<=len-1;i++)
-        {
-           if(i>len-1-k)
-           {
-               ans[i-k-1]=nums[i];
-           }
-           if(i<=len-1-k)
-           {
-               ans[i+k] = nums[i];
-           }
+        for (int i = 0; i < k; i++) {
+            int lastNum = A[len - 1];
 
+            for (int j = len - 2; j >= 0; j--) {
+                A[j + 1] = A[j];
+            }
+
+            A[0] = lastNum;
         }
-        for(int j=0;j <= len-1;j++)
-        {
-            System.out.print(ans[j]);
+        for (int i : A) {
+            System.out.print(i + " ");
         }
 
     }
-    
+
 }
