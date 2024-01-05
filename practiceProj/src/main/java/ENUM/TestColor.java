@@ -8,7 +8,7 @@ public class TestColor {
         System.out.println(cr.name());
         System.out.println(cr.getValue());
 
-        for (Color color : cr.values()) {
+        for (Color color : Color.values()) {
 
             System.out.println(color.name());
         }

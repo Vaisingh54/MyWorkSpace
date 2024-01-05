@@ -1,6 +1,6 @@
 package Practice;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Test {
 
@@ -12,6 +12,8 @@ public class Test {
         System.out.println("Enter column of the array");
         int c = sc.nextInt();
         int[][] arr = new int[r][c];
+
+        sc.close();
 
         System.out.println("Enter elements in array of the array");
         for (int i = 0; i < r; i++) {

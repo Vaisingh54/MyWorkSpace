@@ -8,7 +8,7 @@ public class Occurence {
 
         String str = "211";
         int n = str.charAt(0);
-        System.out.println(n-48);
+        System.out.println(n - 48);
     }
 
     public static int solution(int[] A) {
@@ -20,13 +20,13 @@ public class Occurence {
             list1.add(i);
         }
 
-        String str = list1.toString();
+        // String str = list1.toString();
 
         HashSet<Integer> list = new HashSet<>();
         int count = 0;
 
         for (int i = 0; i < A.length; i++) {
-            int num = Integer.parseInt(str.charAt(i));
+            int num = Integer.parseInt("str.charAt(i)");
 
             for (int j = i + 1; j < A.length; j++) {
                 if (A[j] == num) {

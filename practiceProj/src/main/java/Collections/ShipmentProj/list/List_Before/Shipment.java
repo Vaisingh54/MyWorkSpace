@@ -9,7 +9,7 @@ import Collections.ShipmentProj.common.Product;
 public class Shipment implements Iterable<Product> {
 
     private final static int PRODUCT_NOT_FOUND = -1;
-    private final static int MAX_VAN_WEIGHT = 20;
+    // private final static int MAX_VAN_WEIGHT = 20;
 
     private static List<Product> products = new ArrayList<>();
 
@@ -24,21 +24,19 @@ public class Shipment implements Iterable<Product> {
 
         int index = products.indexOf(product_a);
 
-        if( index != PRODUCT_NOT_FOUND){
-             products.set(index, product_b);
-             return true;
+        if (index != PRODUCT_NOT_FOUND) {
+            products.set(index, product_b);
+            return true;
         }
         return false;
     }
 
-    public List<Product> getListOfLightProducts(Product product){
+    // public List<Product> getListOfLightProducts(Product product){
 
-        
-    }
+    // }
 
     @Override
     public Iterator<Product> iterator() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'iterator'");
     }
 

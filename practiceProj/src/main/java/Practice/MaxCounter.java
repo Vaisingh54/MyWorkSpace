@@ -8,10 +8,6 @@ public class MaxCounter {
 
     public static int[] solution(int N, int[] A) {
 
-        int currentMax = Integer.MIN_VALUE;
-          
-
-
         return A;
     }
 

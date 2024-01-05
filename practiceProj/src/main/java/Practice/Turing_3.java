@@ -48,8 +48,8 @@ public class Turing_3 {
         int minSize = Integer.MAX_VALUE;
         int maxType = Integer.MIN_VALUE;
         int minType = Integer.MAX_VALUE;
-        List<Integer> l = new ArrayList();
-        List<Integer> l1 = new ArrayList();
+        List<Integer> l = new ArrayList<>();
+        List<Integer> l1 = new ArrayList<>();
 
         // To find the max and min size of container available
         for (int i = 0; i < numOfCont; i++) {

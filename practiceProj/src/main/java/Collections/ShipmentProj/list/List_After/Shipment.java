@@ -8,7 +8,6 @@ public class Shipment implements Iterable<Product> {
 
     @Override
     public Iterator<Product> iterator() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'iterator'");
     }
 

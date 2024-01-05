@@ -17,7 +17,7 @@ public class OddOccuranceInArray {
 
         for (int i = 1; i < A.length; i++) {
             if (check.contains(A[i])) {
-                check.remove(new Integer(A[i]));
+                check.remove(A[i]);
             } else {
                 check.add(A[i]);
             }
